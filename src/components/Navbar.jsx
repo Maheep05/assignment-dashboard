@@ -7,7 +7,7 @@ export function Navbar() {
                 <span className="rounded-full bg-black border-2 font-bold h-12 w-12 text-white flex items-center justify-center text-2xl font-lato-bold">B</span>
                 <span className="font-semibold text-lg  md:text-2xl lg:text-3xl font-lato-bold">Project Dashboard</span>
             </div>
-            <div className="flex p-2 justify-between gap-10">
+            <div className="flex p-2 lg:p-0 justify-between gap-10">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="grey" className="lg:hidden md:w-10 md:h-10 h-6 w-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                 </svg>

@@ -19,7 +19,7 @@ export function ProjectBoard() {
         imageUrl: img,
     }]
     return (
-        <div className="bg-white flex flex-col justify-center h-full rounded-lg">
+        <div className="bg-white flex flex-col justify-center  rounded-lg">
             <div className="flex justify-between px-8 py-4 items-center">
                 <div className="flex gap-4 items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-10 h-10">
@@ -42,13 +42,13 @@ export function ProjectBoard() {
                 </div>
             </div>
 
-            <div className="p-4 flex gap-3">
+            <div className="p-4 flex flex-col lg:flex-row gap-3">
                 {data.map((details, index) => (
                     <StoryBoardCard key={index} description={details.description} imageUrl={details.imageUrl} />
                 ))}
 
-                <div className="w-96 rounded overflow-hidden border-2 bg-gray-100 border-gray-200 flex justify-center items-center cursor-pointer" onClick={handleClick}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cccdc8" className="w-14 h-14 border-[#cccdc8] border-2 rounded-full">
+                <div className="md:w-96 h-52 lg:h-96 rounded overflow-hidden border-2 bg-gray-100 border-gray-200 flex lg:flex-row flex-col justify-center items-center cursor-pointer" onClick={handleClick}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#cccdc8" className="w-6 h-6 lg:w-14 lg:h-14 border-[#cccdc8] border-2 rounded-full">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
 

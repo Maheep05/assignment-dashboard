@@ -4,12 +4,12 @@ import { Username } from "./Username";
 
 export function Dashboard() {
     return (
-        <div className="bg-[#f5f6f0] h-screen">
+        <div className="bg-[#f5f6f0] ">
             <Navbar />
 
-            <div className="flex justify-between items-center p-14">
+            <div className="flex flex-col gap-4 md:flex-row justify-between md:items-center p-10 text-center md:p-14">
                 <Username username={"Adam Cooper Team"} />
-                <button className="px-6 py-2 bg-black text-white text-xl font-lato-bold font-bold rounded-lg">New Project</button>
+                <button className="px-6 py-2 bg-black text-white font-semibold text-lg  md:text-2xl font-lato-bold rounded-lg">New Project</button>
             </div>
 
             <div className="px-10">

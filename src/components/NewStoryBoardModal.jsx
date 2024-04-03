@@ -37,11 +37,11 @@ export function NewStoryBoardModal({ onClose }) {
 
                 <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
 
-                    <div className="bg-white flex flex-col justify-center gap-6 sm:p-8 sm:pb-4">
+                    <div className="bg-white flex flex-col justify-center gap-6 p-4">
 
-                        <div className='flex justify-between'>
-                            <span className='text-3xl font-bold'>New Storyboard</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="grey" className="w-10 h-10 bg-[#e9eae8] rounded-full border-2 border-[#e9eae8] p-1 cursor-pointer" onClick={onClose} >
+                        <div className='flex justify-between  items-center'>
+                            <span className='text-lg lg:text-3xl font-bold'>New Storyboard</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="grey" className="w-8 h-8 md:w-10 md:h-10 bg-[#e9eae8] rounded-full border-2 border-[#e9eae8] p-1 cursor-pointer" onClick={onClose} >
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
 
@@ -66,12 +66,12 @@ export function NewStoryBoardModal({ onClose }) {
 
                     <hr />
 
-                    <div className=" py-6 px-8 flex justify-between items-center">
-                        <div className='flex gap-2 items-center justify-center'>
+                    <div className="py-5 px-4  md:py-6 md:px-8 flex flex-col gap-4 sm:flex-row justify-between items-center">
+                        <div className='flex  gap-2 items-center justify-center'>
                             <button type="button" onClick={handleSwitch} className='relative inline-block h-4 w-10 rounded-full border-2 border-black focus:outline-none transition-transform ease-in-out duration-300'>
-                                <span className={`absolute top-[2px]  w-2 h-2 rounded-full bg-black shadow-md transform ${switchPosition ? 'translate-x-2' : '-translate-x-4'}`}></span>
+                                <span className={`absolute top-[2px] w-2 h-2 rounded-full bg-black shadow-md transform ${switchPosition ? 'translate-x-2' : '-translate-x-4'}`}></span>
                             </button>
-                            <span className='font-semibold'>AI Assistant</span>
+                            <span className='font-semibold text-sm md:text-base'>AI Assistant</span>
                         </div>
 
                         <button type="button" onClick={handleSubmit} disabled={isSubmitDisabled} className={`${isSubmitDisabled ? 'bg-gray-300 cursor-not-allowed' : 'bg-black'}  justify-center px-4 py-2 text-sm font-medium rounded-md text-white focus:outline-none`}>
